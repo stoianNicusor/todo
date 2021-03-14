@@ -2,9 +2,26 @@
     .lista{
         display: flex;
 
-        .btn{
-            float: right;
-            color: red;
+        .btnRemove{
+           // float: right;
+            cursor: pointer;
+            border: none;
+            outline:none;
+            background-color: Transparent;
+
+            :hover{
+                color: red;
+            }
         }
+        .btnCheck{
+            cursor: pointer;
+            border: none;
+            margin: 0 1vw;
+            outline:none;
+            background-color: Transparent;
+        }
+    }
+    .complet{
+        background-color: green;
     }
 }

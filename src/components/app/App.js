@@ -9,7 +9,12 @@ function App() {
  
   const [input, setInput] = useState('');
   const [list, setList] = useState([]);
-
+  
+  let complet = (on) =>{   
+    var a = document.getElementById('lista' + on)
+    a.classList.toggle('complet') 
+  }
+ 
   let take = (e) => {
     setInput(e.target.value)
   } 
@@ -38,7 +43,7 @@ function App() {
     <div className="app">
       <h1>ToDo List</h1>
       <ToDo take = {take} addTodo = {addTodo} />
-      <Display list = {list} remove = {removeItem} />
+      <Display list = {list} remove = {removeItem} complet = {complet} />
     </div>
   )
 }
