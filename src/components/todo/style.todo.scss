@@ -1,0 +1,29 @@
+.todo{
+    margin-bottom: 5.5vh;
+    text-align: center;
+    
+    .input{
+        height: 5vh;
+        width: 14vw;
+        outline: none;
+        border: none;
+        background: transparent;
+        box-shadow: inset -5px -5px 5px #fff7,
+                    inset 5px 5px 5px #0002;
+        border-radius: 5px;
+    }
+
+    .btn{
+        margin-left: 1.5vw;
+        padding: 1.4vh 1.6vw;
+        font-weight: 400;
+        border:none;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        box-shadow: -5px -5px 5px #fff7,
+                    5px 5px 5px #0002;
+        outline: none;
+        font-weight: 900;
+        opacity: 0.8;
+    }
+}

@@ -4,10 +4,10 @@ import './style.todo.scss';
 function ToDo(props){
 
     return(
-       <div>
-           <input name='input' id='input' placeholder='Add ToDo' type='sumbit'  onChange={props.take}/>
-           <button className='add' onClick={props.addTodo} >
-               Add todo
+       <div className='todo'>
+           <input className='input' name='input' id='input' placeholder='  Add ToDo' autoComplete='off'  onChange={props.take}/>
+           <button className='btn' onClick={props.addTodo} >
+               Add
            </button>
         </div>
     )

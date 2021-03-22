@@ -3,6 +3,7 @@ import './App.scss';
 import ToDo from '../todo/component.todo';
 import Display from '../display/component.display';
 
+
 const storage = 'todo'
 
 function App() {
@@ -11,12 +12,12 @@ function App() {
   const [list, setList] = useState([]);
   
   let complet = (on) =>{   
-    var a = document.getElementById('lista' + on)
-    a.classList.toggle('complet') 
+    var a = document.getElementById('lista' + on);
+    a.classList.toggle('complet') ;
   }
  
   let take = (e) => {
-    setInput(e.target.value)
+    setInput(e.target.value);
   } 
  
   let addTodo = () => {
@@ -41,7 +42,7 @@ function App() {
 
   return(
     <div className="app">
-      <h1>ToDo List</h1>
+      <div className='title' >ToDo List</div>
       <ToDo take = {take} addTodo = {addTodo} />
       <Display list = {list} remove = {removeItem} complet = {complet} />
     </div>

@@ -1,9 +1,16 @@
 .display{
     .lista{
-        display: flex;
+       margin: 2vh  2vw;
+       text-transform: capitalize;
+       box-shadow: -5px -5px 5px #fff7,
+                    5px 5px 5px  #0002;
+       padding: 1.5vh 1vw;
+       border-radius: 6px;
+       animation: opc 0.3s linear;
+
 
         .btnRemove{
-           // float: right;
+            float: right;
             cursor: pointer;
             border: none;
             outline:none;
@@ -13,15 +20,34 @@
                 color: red;
             }
         }
+
         .btnCheck{
             cursor: pointer;
             border: none;
             margin: 0 1vw;
             outline:none;
             background-color: Transparent;
+            float: right;
         }
     }
+
     .complet{
-        background-color: green;
+        animation: color 2s forwards;
+    }
+}
+
+@keyframes opc{
+    from{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+@keyframes color{
+    from{
+        background-color: #e5e5e5;  
+    }
+    to{
+        background-color: #53C01B;
     }
 }

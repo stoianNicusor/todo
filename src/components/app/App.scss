@@ -1,0 +1,24 @@
+body{
+    background-color: #e5e5e5;
+}
+.app{
+    width: 27vw;
+    height: 80vh;
+    margin: 10vh auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 13px #0002,
+                -10px -10px 13px #fff7;
+    
+    .title{
+    text-align: center;
+    margin: 0 0 5vh 0;
+    padding-top: 2vh;
+    font-size: 2em;
+    color: #e5e5e5;
+    text-shadow: -3px -3px 3px #fff7,
+                    3px 3px 3px #0006;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    }
+    
+}
