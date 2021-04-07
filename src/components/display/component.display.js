@@ -2,6 +2,7 @@ import React from 'react';
 import './style.display.scss';
 import {BsTrash} from 'react-icons/bs';
 import {FcCheckmark} from 'react-icons/fc';
+import PropTypes from 'prop-types';
 
 function Display(props){
     
@@ -23,6 +24,13 @@ function Display(props){
         ))}
         </div>
     )
+}
+
+Display.propTypes ={
+    check: PropTypes.any,
+    remove: PropTypes.func,
+    complet: PropTypes.func,
+    list: PropTypes.any
 }
 
 export default Display;

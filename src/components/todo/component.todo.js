@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.todo.scss';
+import PropTypes from 'prop-types';
 
 function ToDo(props){
 
@@ -11,6 +12,11 @@ function ToDo(props){
            </button>
         </div>
     )
+}
+
+ToDo.propTypes ={
+  take: PropTypes.any,
+  addTodo: PropTypes.func
 }
 
 
